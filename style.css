@@ -1,0 +1,283 @@
+body {
+  height: auto;
+  font-family: "Poppins", sans-serif;
+  background-color: #fafffb;
+}
+
+/* header section */
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(bg-asli.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* border: 2px solid red; */
+  display: flex;
+}
+
+header .banner {
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  /* border: 2px solid blue; */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .normal-screen {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.banner .normal-screen .top img {
+  border: 5px solid whitesmoke;
+  border-radius: 100%;
+}
+
+.banner .normal-screen .top .date p {
+  font-size: 1.3rem;
+}
+
+.banner .normal-screen .bot .card-say {
+  margin-bottom: 1.8rem;
+}
+
+.banner .normal-screen .bot .btn-scroll a {
+  text-decoration: none;
+  color: white;
+  background-color: green;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid green;
+  transition: all ease 0.2s;
+}
+
+.banner .normal-screen .bot .btn-scroll a:hover {
+  color: green;
+  background-color: whitesmoke;
+}
+
+/* main section */
+
+#main {
+  margin-top: 30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  align-items: center;
+  text-align: center;
+  /* justify-content: center; */
+}
+
+#main .messages p {
+  font-size: 2rem;
+  margin-bottom: 15rem;
+}
+
+#main .messages img {
+  width: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 15rem;
+}
+
+.messages {
+  padding: 1rem;
+  padding-top: 4rem;
+}
+
+/* gallery */
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+}
+
+.gallery .title p {
+  font-size: 6rem;
+  margin-bottom: 10rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  filter: brightness(0.8);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+.column img:hover {
+  filter: brightness(1);
+}
+
+/* audio */
+.audio {
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 7rem;
+}
+
+
+.audio p span {
+    color: grey;
+}
+
+
+
+/* footer */
+footer .container p {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column img {
+    filter: grayscale(0) brightness(1);
+  }
+}
+
+/* responsive */
+@media screen and (max-width: 600px) {
+  #main .messages img {
+    width: 80%;
+  }
+
+  #main .messages p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .gallery .title p {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .gallery .title p {
+    font-size: 4rem;
+  }
+
+  .banner .normal-screen .top .img img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 306px) {
+  .gallery .title p {
+    font-size: 3rem;
+  }
+
+  header nav .container a span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 240px) {
+  .gallery .title p {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-height: 580px) {
+  .banner .normal-screen .top .img img {
+    width: 180px;
+  }
+}
+
+@media screen and (max-height: 420px) {
+  .banner .normal-screen .top .img img {
+    width: 130px;
+  }
+
+  .banner .normal-screen .top .cake {
+    font-size: 0.7rem;
+  }
+
+  .banner .normal-screen .top .date p {
+    font-size: 0.8rem;
+  }
+
+  .banner .normal-screen .bot .card-say h1 {
+    font-size: 1.4rem;
+  }
+
+  .banner .normal-screen .bot .card-say {
+    margin-bottom: 0;
+  }
+
+  .banner .normal-screen .bot .btn-scroll a {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-height: 255px) {
+  .banner .normal-screen .top .img img {
+    width: 100px;
+  }
+
+  .banner .normal-screen .top .cake {
+    font-size: 0.5rem;
+  }
+
+  .banner .normal-screen .top .date p {
+    font-size: 0.7rem;
+  }
+
+  .banner .normal-screen .bot .card-say h1 {
+    font-size: 1.2rem;
+  }
+
+  .banner .normal-screen .bot .card-say {
+    margin-bottom: 0;
+  }
+
+  .banner .normal-screen .bot .btn-scroll a {
+    padding: 0.25rem;
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 488px) {
+  footer .container p {
+    font-size: 1.1rem;
+  }
+}
